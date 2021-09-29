@@ -1,0 +1,7 @@
+<!-- $event: to access to emitted event -->
+<app-search-note (onChange)="searchNote($event)"></app-search-note>
+<!-- N.B: in this case we don't have the note variable provided by the ngFor loop, instead we use the '$event' -->
+<app-add-note (onAddNote)="addNote($event)"></app-add-note>
+
+<app-notes-item class="notes-item" *ngFor="let note of notes" [note]="note" (onDeleteNote)="deleteNote(note)"
+  (onToggleFavorite)="toggleFavorite(note)"></app-notes-item>

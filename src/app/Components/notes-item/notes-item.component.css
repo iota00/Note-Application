@@ -1,0 +1,37 @@
+.note {
+  background: #bebdbd;
+  background: #f4f4f4;
+  margin: 10px;
+  padding: 10px 20px;
+  cursor: pointer;
+  border-radius: 5px;
+  position: relative;
+}
+
+.note.favorite {
+  border-left: 5px solid green;
+}
+
+.icons {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 80px;
+  outline: none;
+  transition: .3s linear;
+}
+
+.heart {
+  opacity: 0;
+  border: 1px solid red;
+}
+
+.note h3 {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.date {
+  font-size: 10px;
+}

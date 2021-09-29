@@ -1,0 +1,28 @@
+<form *ngIf="showAddNote" class="add-form" (ngSubmit)="onSubmit()">
+
+  <div class="form-control">
+    <label for="title">Title:</label>
+    <input type="text" name="title" id="title" placeholder="Add Note" [(ngModel)]="title">
+
+  </div>
+
+  <div class="form-control">
+    <label for="text">Text: </label>
+    <textarea type="text" name="text" id="text" placeholder="Add text" [(ngModel)]="text"></textarea>
+  </div>
+
+  <div class="form-control form-control-check">
+    <label for="favorite">Set favorite:</label>
+    <input type="checkbox" name="favorite" id="favorite" [(ngModel)]="favorite">
+  </div>
+  <div class="form-control form-control-check">
+    <label for="public">Public: </label>
+    <input type="radio" name="type" id="public" [(ngModel)]="type" value="public" checked>
+
+    <label for="private">Private: </label>
+    <input type="radio" name="type" id="private" [(ngModel)]="type" value="private">
+  </div>
+  <input type="submit" name="submit" value="Save Note" class="btn btn-block">
+
+
+</form>

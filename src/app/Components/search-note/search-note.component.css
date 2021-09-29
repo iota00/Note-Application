@@ -1,0 +1,16 @@
+.search {
+  margin: 10px;
+  padding: 10px 20px;
+  cursor: pointer;
+
+}
+
+input {
+  width: 300px;
+  border-radius: 5px;
+  box-shadow: 0px 0px 3px #333;
+  outline: none;
+  border: none;
+  border-bottom: 1px slategray solid;
+
+}

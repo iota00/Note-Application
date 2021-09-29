@@ -1,0 +1,22 @@
+<div [ngClass]="{favorite: note.favorite}" class="note" (dblclick)="onToggle(note)">
+  <h3> {{note.title}}
+    <div class="icons">
+
+      <fa-icon class="heart" [ngClass]="{heart: !note.favorite}" [icon]="faHeart" [ngStyle]="{'color': 'green'}">
+      </fa-icon>
+
+      <fa-icon class="remove" (click)="onDelete(note)" [icon]="faTimes" [ngStyle]="{'color': 'red' }"></fa-icon>
+
+    </div>
+
+  </h3>
+  <p class="text">
+    {{note.text}}
+  </p>
+  <p class="type">
+    {{note.type}}
+  </p>
+  <p class="date">
+    Date: {{note.date}}
+  </p>
+</div>
