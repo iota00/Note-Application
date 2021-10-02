@@ -2,6 +2,14 @@
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 12.1.2.
 
+
+![ezgif com-optimize](https://github.com/anassfresco/note-angular/blob/main/src/app/24s.gif)
+
+
+created by :
+-[anas bahi ](https://github.com/anassfresco) 
+-[Mohamed Ait Abdenni](https://github.com/iota00)
+
 ## Development server
 
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
