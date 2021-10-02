@@ -20,7 +20,7 @@ private apiURL = "http://127.0.0.1:5000/notes"
   constructor(private http:HttpClient) { }
 
   getNotes(): Observable<Note[]> {
-    return  this.http.get<Note[]>(this.apiURL); // perform a get request
+    return  this.http.get<Note[]>(this.apiURL); // perform a GET request
   }
   deleteNotes(note: Note): Observable<Note> {
     const url = `${this.apiURL}/${note.id}`;
@@ -31,7 +31,7 @@ private apiURL = "http://127.0.0.1:5000/notes"
   updateFavorite(note: Note): Observable<Note> {
     const url = `${this.apiURL}/${note.id}`;
     
-    return this.http.put<Note>(url, note, httpOptions); // we update the hole task, to make sure that the reminder is updated. (otherwise it'll not work correctly)
+    return this.http.put<Note>(url, note, httpOptions); // we update the whole task, to make sure that the reminder is updated. (otherwise it'll not work correctly)
   }
 
   addNote(note: Note): Observable<Note> {

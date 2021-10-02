@@ -11,7 +11,7 @@ import { Router } from '@angular/router'; // used to figure out on which router 
   styleUrls: ['./header.component.css']
 })
 export class HeaderComponent implements OnInit {
-  title: string = "Angular Apps";
+  title: string = "Notes Application";
   showAddNote: boolean = false;
   subscription!: Subscription;
 
